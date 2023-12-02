@@ -16,12 +16,16 @@
                smoothcount="10"
                smoothtolerance=".01"
                smooththreshold="5">
-            <a-entity fbx-model="src: url(/Models/C127/C127.fbx);"
-                      scale="1 1 1"
-                      position="50 0 -50"
-                      crossorigin="anonymous">
+            <a-entity >
             </a-entity>
         </a-nft>
+        <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
+        <a-entity fbx-model="src: url(Models/C127/C127.fbx);"
+                      scale="1 1 1"
+                      position="50 0 -50"
+                      crossorigin="anonymous"
+                      gps-new-entity-place="latitude: <your-lat>; longitude: <your-loon>"></a-entity>
+
         <a-entity camera></a-entity>
     </a-scene>
 
